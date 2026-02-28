@@ -1,3 +1,4 @@
+-- https://raw.githubusercontent.com/dgwowxyz/asdasdasd/refs/heads/main/fwa.lua
 -- variables
 	local uis = cloneref(game:GetService("UserInputService"))
 	local players = cloneref(game:GetService("Players"))
@@ -66,7 +67,7 @@
 
 -- library init
 	local library = {
-		directory = "vape.gg",
+		directory = "no.way",
 		folders = {
 			"/fonts",
 			"/configs",
@@ -107,7 +108,7 @@
 			["accent"] = hex("#6078BE"), --
 			["high_contrast"] = hex("#141414"),
 			["low_contrast"] = hex("#1E1E1E"),
-			["text"] = hex("#B4B4B4"),
+			["text"] = hex("#ffffff"),
 			["text_outline"] = rgb(0, 0, 0),
 			["glow"] = hex("#6078BE"), 
 		},
@@ -1525,7 +1526,7 @@
 
 			-- main window
 				local main_window = library:panel({
-					name = properties and properties.name or "vape.gg | ", 
+					name = properties and properties.name or "no.way | ", 
 					size = dim2(0, 604, 0, 628),
 					position = dim2(0, (camera.ViewportSize.X / 2) - 302 - 96, 0, (camera.ViewportSize.Y / 2) - 421 - 12),
 					image = "rbxassetid://98823308062942",
@@ -1630,11 +1631,11 @@
 					image = "rbxassetid://115194686863276",
 				})
 
-				local watermark = library:watermark({default = os.date('vape.gg |  - %b %d %Y - %H:%M:%S')})  
+				local watermark = library:watermark({default = os.date('no.way | - %b %d %Y - %H:%M:%S')})  
 
 				task.spawn(function()
 					while task.wait(1) do 
-						watermark.change_text(os.date('vape.gg - Beta - %b %d %Y - %H:%M:%S'))
+						watermark.change_text(os.date('no.way - Private - %b %d %Y - %H:%M:%S'))
 					end 
 				end) 
 
